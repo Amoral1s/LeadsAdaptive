@@ -1472,13 +1472,13 @@ input, button {
   .ways-wrap img {
     max-height: 160px; }
   .ways-wrap p {
-    font-size: 12px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .ways-wrap:nth-child(4) img {
     max-height: 160px; }
   .ways-wrap:nth-child(4) p {
-    font-size: 12px;
-    line-height: 16px; }
+    font-size: 14px;
+    line-height: 18px; }
   .clients-wrap {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -1521,6 +1521,9 @@ input, button {
     font-size: 14px; }
     .question-wrap-text p {
       font-size: 14px; }
+  .post div.title {
+    margin: 30px 0;
+    margin-bottom: 40px; }
   .post-wrap {
     -webkit-flex-basis: 100%;
         -ms-flex-preferred-size: 100%;
@@ -1571,7 +1574,7 @@ input, button {
     .ways span.title {
       max-width: 100%;
       padding: 0 40px;
-      font-size: 12px; }
+      font-size: 14px; }
     .ways-wrap {
       -webkit-box-orient: vertical;
       -webkit-box-direction: reverse;
