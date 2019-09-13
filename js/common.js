@@ -51,7 +51,22 @@ $(function () {
   $('.post-wrap:nth-child(3)').addClass('post-show');
   $('.post-wrap:nth-child(4)').addClass('post-show');
     
-  
+  $('.call').on('click', function() {
+
+    $('.popup-callback').addClass('popup-callback-active');
+    $('.overlay').addClass('overlay-active');
+    
+  });
+  $('.popup-callback-close').on('click', function() {
+    $('.popup-callback').removeClass('popup-callback-active');
+    $('.overlay').removeClass('overlay-active');
+    
+    
+  });
+  $('.overlay').on('click', function() {
+    $('.popup-callback').removeClass('popup-callback-active');
+    $('.overlay').removeClass('overlay-active');
+  });
    
 
 
