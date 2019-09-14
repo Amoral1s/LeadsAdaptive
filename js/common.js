@@ -45,6 +45,9 @@ $(function () {
   $('.price-wrap-item:nth-child(3)').addClass('price-show');
   $('.price-wrap-item:nth-child(4)').addClass('price-show');
 
+  $('.delete').addClass('price-show');
+
+
 
   $('.post-wrap:first-child').addClass('post-show');
   $('.post-wrap:nth-child(2)').addClass('post-show');
@@ -57,14 +60,20 @@ $(function () {
     $('.overlay').addClass('overlay-active');
     
   });
+  $('.call-price').on('click', function() {
+
+    $('.popup-callback2').addClass('popup-callback2-active');
+    $('.overlay').addClass('overlay-active');
+    
+  });
   $('.popup-callback-close').on('click', function() {
     $('.popup-callback').removeClass('popup-callback-active');
+    $('.popup-callback2').removeClass('popup-callback2-active');
     $('.overlay').removeClass('overlay-active');
-    
-    
   });
   $('.overlay').on('click', function() {
     $('.popup-callback').removeClass('popup-callback-active');
+    $('.popup-callback2').removeClass('popup-callback2-active');
     $('.overlay').removeClass('overlay-active');
   });
    
