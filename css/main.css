@@ -272,12 +272,16 @@ input:focus, button:focus {
     padding: 10px 10px 12px 20px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    appearance: none; }
+    appearance: none;
+    background-color: #fff; }
     .popup-callback2 select:focus {
       outline: none; }
     .popup-callback2 select option {
       -webkit-border-radius: 10px;
-              border-radius: 10px; }
+              border-radius: 10px;
+      background-color: #fff;
+      background-color: #fff;
+      padding: 10px 10px 12px 20px; }
   .popup-callback2 label {
     font-size: 12px;
     color: #fff;
@@ -288,7 +292,10 @@ input:focus, button:focus {
             border-radius: 30px;
     font-size: 14px;
     padding: 10px 10px 12px 20px;
-    border: none; }
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
     .popup-callback2 input[type="submit"] {
       margin-top: 25px;
       background-color: #efc435;
@@ -298,7 +305,10 @@ input:focus, button:focus {
       color: #000;
       -webkit-transition: 0.6s;
       -o-transition: 0.6s;
-      transition: 0.6s; }
+      transition: 0.6s;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
       .popup-callback2 input[type="submit"]:hover {
         background-color: #202844;
         -webkit-box-shadow: 0 0 5px #efc435;
