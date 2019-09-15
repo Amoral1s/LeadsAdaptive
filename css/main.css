@@ -269,7 +269,10 @@ input:focus, button:focus {
     width: 240px;
     -webkit-border-radius: 30px;
             border-radius: 30px;
-    padding: 10px 10px 12px 20px; }
+    padding: 10px 10px 12px 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
     .popup-callback2 select:focus {
       outline: none; }
     .popup-callback2 select option {
