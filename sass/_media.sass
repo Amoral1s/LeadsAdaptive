@@ -1,0 +1,604 @@
+@media (max-width: 1199px)
+	.footer
+		&-wrap
+			max-width: 1200px
+			padding: 0 10px
+	.post
+		&-wrap
+			&-overlay
+				h3
+					font-size: 16px
+	.ways
+		max-width: 1170px
+		padding: 0 15px
+	.header
+		&-content
+			h1
+				font-size: 50px
+				line-height: 50px
+			span
+				font-size: 14px
+				padding-right: 40px
+
+@media (max-width: 1140px)
+	.ways
+		&-wrap
+			p
+				font-size: 14px
+				line-height: 20px
+@media (max-width: 992px)
+	.process
+		padding: 30px 0
+		div.title
+			padding-bottom: 20px
+			font-size: 18px
+	.about-slider-buttons
+		display: none
+	.about
+		padding-bottom: 30px!important
+		&-slider
+			&-item
+				button.button
+					margin-top: 30px
+				div.title
+					font-size: 16px
+				&-text
+					text-align: center
+					font-size: 14px
+					padding-top: 30px
+	.page-price-header
+		min-height: 700px
+	.page-price
+		margin-top: 40px
+		padding-bottom: 0
+		&-wrap
+			margin-top: 40px
+			&-item
+				flex-basis: 48%
+	.footer
+		&-wrap
+			flex-direction: column
+			padding: 0 40px
+			&-tel
+				margin: 15px 0
+			&-clock
+				margin-top: 15px
+				&:after
+					display: none
+	.question
+		padding: 0
+		padding-bottom: 50px
+		padding-top: 30px
+		&-wrap
+			flex-basis: 100%
+			&:last-child
+				display: none
+	.post
+		&-wrap
+			flex-basis: 50%
+			img
+				min-width: 100%
+	.price
+		padding: 40px 0
+		&-wrap
+			justify-content: space-around
+			&-item
+				flex-basis: 40%
+		div.title
+			font-size: 22px
+		span.title
+			font-size: 14px
+	.ways
+		padding: 30px
+		div.title
+			font-size: 22px
+			padding: 0 20px
+		span.title
+			padding: 0 20px
+			font-size: 14px
+		&-wrap
+			padding: 0
+			margin: 10px 0
+			min-height: auto
+			&:nth-child(4)
+				padding: 0
+				p
+					padding: 0
+					margin: 0
+					font-size: 14px
+					padding-left: 20px
+				img
+					padding: 0
+					margin: 0px
+					max-height: 240px
+			p
+				padding: 0
+				margin: 0
+				padding-right: 20px
+				font-size: 14px
+			img
+				padding: 0
+				margin: 0px
+				max-height: 240px
+			&-img
+				display: none
+	.clients
+		&-wrap
+			&-item
+				&_text
+					font-size: 14px
+				&_title
+					padding-left: 55px
+					margin-bottom: 20px
+					img
+						width: auto
+						max-height: 35px
+						
+		div.title
+			font-size: 22px
+		
+			
+	.toggle
+		display: block
+		transition: 1s
+	.header
+		background-image: url(../img/bg-header.png)
+		background-position: top left
+		&-bottom
+			padding: 65px 0
+			padding-bottom: 20px
+			&_content
+				margin-top: 30px
+				flex-direction: column
+				max-width: 480px
+				div
+					padding-left: 90px
+					margin: 0
+					margin-bottom: 30px
+					padding-top: 10px
+					padding-bottom: 10px
+					b
+						font-size: 14px
+					span
+						font-size: 14px
+				img
+					max-width: 80px
+					
+			div.title
+				font-size: 20px
+				padding-left: 20px
+				padding-right: 20px
+				
+		&-nav
+			position: fixed
+			background-color: rgba($main, 0.7)
+			width: 60%
+			padding: 0
+			height: 100%
+			top: 0
+			right: 0
+			margin: 0
+			padding-top: 100px
+			z-index: 97
+			transform: translateX(300%)
+			transition: 0.6s
+			&-active
+				transition: 0.6s
+				transform: translateX(0%)
+			ul
+				flex-direction: column
+				align-items: flex-start
+				width: 100%
+				li.has-children
+					display: flex
+					flex-direction: column
+					margin: 0
+					padding: 0
+					ul
+						position: static
+						display: block
+						li
+							background-color: transparent
+							a
+								color: #fff
+								padding-left: 40px
+								
+								&:after
+									display: none
+					&::after
+						display: none
+				li
+					width: 100%
+					margin: 0
+					
+
+					a
+						color: #fff
+						font-size: 16px
+						width: 100%
+						padding: 15px 0 15px 30px
+						position: relative
+						&::after
+							position: absolute
+							content: ''
+							width: 100%
+							left: 0
+							top: 0
+							height: 1px
+							background-color: $light
+		&-top
+			&_right
+				position: absolute
+				top: 610px
+			&_left
+				flex-basis: 20%
+				img
+					height: 60px
+			&_center
+				flex-direction: column
+				flex-basis: 40%
+				a
+					font-size: 14px
+					width: 100%
+					display: flex
+					justify-content: center
+					&:after
+						display: none
+				span
+					font-size: 12px
+					width: 100%
+					display: flex
+					justify-content: center
+					&:after
+						display: none
+	.portfolio
+		margin-top: 30px
+		&-wrap
+			padding: 30px 0
+			&-item
+				&_right
+					margin: 15px
+					margin-left: 25px
+					h4
+						font-size: 18px
+					p
+						padding-left: 15px
+						font-size: 14px
+					&_leads
+						font-size: 14px
+						padding-left: 15px
+						
+						&:after
+							left: -10px
+	.page-header
+		top: 550px
+		&-main
+			min-height: 700px
+	.contacts-form
+		div.title-in
+			font-size: 16px
+		label
+			font-size: 10px
+		input
+			max-width: 260px
+		textarea
+			max-width: 260px
+			min-width: 260px
+		&_left
+			flex-basis: 100%
+		&_right
+			flex-basis: 100%
+	.contacts
+		margin-top: 0
+		div.title
+			font-size: 24px
+			margin: 30px 0
+		&-wrap
+			flex-wrap: wrap
+			
+			&_left
+				flex-basis: 100%
+			&_right
+				flex-basis: 100%
+	.price_header
+		top: 565px
+	.button404
+		display: none
+	.header-404
+		height: 1000px
+@media (max-width: 768px)
+	
+	.portfolio
+		&-wrap
+			&-item
+				flex-direction: column
+				align-items: center
+				&_right
+					padding: 20px
+					padding-top: 0
+					margin-top: 0
+					h4
+						text-align: center
+					p
+						padding-left: 30px
+					&_leads
+						padding-left: 30px
+						&:after
+							left: 0
+				&_left
+					align-items: center
+					div.button
+						width: 260px
+						margin: 30px 0
+					img
+						max-width: 100%
+						width: 100vw
+						height: auto
+						box-shadow: none
+	.price
+		&-wrap
+			&-item
+				display: none
+		&-show
+			display: flex
+	.price
+		padding: 40px 0
+		&-buttons
+			flex-direction: column
+			a
+				margin: 0
+			div
+				margin: 0
+				margin-top: 30px
+		&-wrap
+			justify-content: space-around
+			&-item
+				div.title
+					font-size: 20px
+				margin-top: 10px
+	.ways
+		&-wrap
+			
+			img
+				max-height: 160px
+			p
+				
+				font-size: 14px
+				line-height: 18px
+			&:nth-child(4)
+				img
+					max-height: 160px
+				p
+					
+					font-size: 14px
+					line-height: 18px
+	.clients
+		&-wrap
+			justify-content: space-between
+			&-item
+				flex-basis: 45%
+				
+	.header
+		min-height: 680px
+		background-image: url(../img/bg-header2.png)
+		&-content
+			margin-top: 120px
+		&-top
+			flex-basis: 100%
+			justify-content: flex-start
+			&_left
+				flex-basis: 30%
+			&_center
+				flex-basis: 50%
+			&_right
+				top: 470px
+	.price_header
+		top: 435px
+	.page-price-header
+		min-height: 550px
+@media (max-width: 578px)
+	.page-price
+		margin-top: 40px
+		padding-bottom: 0
+		&-wrap
+			margin-top: 40px
+			&-item
+				flex-basis: 100%
+	.contacts
+		&-wrap
+			&_left
+				span
+					font-size: 14px
+				a
+					font-size: 14px
+	.question
+		&-wrap
+			div.title
+				font-size: 22px
+			&-title
+				font-size: 18px
+			&-text
+				font-size: 14px
+				p
+					font-size: 14px
+	.post
+		div.title
+			margin: 30px 0
+			margin-bottom: 40px
+		&-wrap
+			flex-basis: 100%
+			display: none
+			img
+				min-width: 100%
+	
+	.post-show
+		display: flex
+	.price
+		&-wrap
+			&-item
+				flex-basis: 100%
+				align-items: center
+				margin-left: 40px
+				margin-right: 40px
+				margin-top: 40px
+				padding: 20px
+				justify-content: center
+				&-button
+					justify-content: center
+				div.title
+					text-align: center
+				span
+					text-align: center
+					display: flex
+					justify-content: center
+	.ways
+		padding-bottom: 0
+		span.title
+			max-width: 100%
+			padding: 0 40px
+			font-size: 14px
+		&-wrap
+			flex-direction: column-reverse
+			p
+				padding: 20px
+				box-shadow: 0 0 5px rgba(0,0,0,0.1)
+				border-radius: 5px
+			img
+				max-height: 160px
+				margin-bottom: 20px
+			&:nth-child(4)
+				flex-direction: column
+				p
+					padding: 20px
+					box-shadow: 0 0 5px rgba(0,0,0,0.1)
+					border-radius: 5px
+				img
+					max-height: 160px
+					margin-bottom: 20px
+	.clients
+		padding: 40px 0 20px 0
+		&-wrap
+			justify-content: space-between
+			margin-top: 20px
+			&-item
+				padding: 0
+				margin: 20px 50px
+				margin-bottom: 10px
+				flex-basis: 100%
+				&_title
+					margin-bottom: 15px
+				&_text
+					padding: 20px
+					box-shadow: 0 0 5px rgba(0,0,0,0.1)
+					border-radius: 5px
+	.toggle
+		top: 15px
+		right: -5px
+	.header
+		&-top
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			padding-left: 30px
+			&_right
+				top: 490px
+				left: 25px
+			&_center
+				align-items: flex-start
+				span
+					color: #fff
+				a
+					color: $light
+					justify-content: flex-start
+					margin-top: 5px
+			&_left
+				margin-top: 0px
+				margin-bottom: 40px
+				img
+					height: 80px
+		&-content
+			padding-left: 30px
+			margin-top: 60px
+			h1
+				font-size: 40px
+				line-height: 42px
+			span
+				font-size: 14px
+				padding-right: 60px
+	.price_header
+		top: 455px
+	.page-price-header
+		min-height: 550px
+	.page-price
+		div.title
+			padding: 0 20px
+			font-size: 20px
+@media (max-width: 450px)
+	.contacts
+		margin-top: -40px
+	.clients
+		&-wrap
+			&-item
+				padding: 0
+				margin: 20px
+				margin-bottom: 10px
+				&_title
+					span
+						font-size: 18px
+				&_text
+					font-size: 12px
+	.header
+		background-position: 0 10px
+		&-top
+			&_right
+				top: 460px
+				left: 20px
+		&-bottom
+			&_content
+				div
+					b
+						font-size: 12px
+					span
+						font-size: 12px
+		&-top
+			padding-left: 20px
+		&-nav
+			width: 90%
+		&-content
+			padding-left: 20px
+			margin-top: 40px
+			h1
+				font-size: 30px
+				line-height: 30px
+			span
+				font-size: 12px
+				line-height: 16px
+				max-width: 300px
+	.price_header
+		top: 410px
+	.page-price-header
+		min-height: 530px
+@media (max-width: 385px)
+	.contacts
+		margin-top: -80px
+	
+@media (max-width: 364px)
+	.footer-wrap
+		padding: 0
+		&-copy
+			font-size: 12px
+	.header
+		
+		&-top
+			&_left
+				img
+					height: 60px
+					margin-top: 14px
+	.contacts-form
+		padding: 30px 10px
+		small
+			text-align: center
+		div.title-in
+			text-align: center
+	.page-price
+		margin-top: 0px

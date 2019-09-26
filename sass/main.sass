@@ -1,0 +1,1308 @@
+@import "reset"
+.overlay
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($light, 0.3)
+  z-index: 101
+  transition: 1s
+  transform: translateX(-200%)
+  &-active
+    transform: translateX(0%)
+
+.popup-callback
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(450%, -50%)
+  z-index: 120
+  max-width: 320px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 20px
+  background-color: $main
+  border-radius: 5px
+  box-shadow: 0 0 5px $main
+  transition: 1s
+  &-active
+    transform: translate(-50%, -50%)
+  div.title
+    font-size: 20px
+    color: #fff
+  label
+    font-size: 12px
+    color: #fff
+    margin-top: 15px
+  input
+    width: 240px
+    border-radius: 30px
+    font-size: 14px
+    padding: 10px 10px 12px 20px
+    border: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    &[type="submit"]
+      margin-top: 25px
+      background-color: $light
+      font-size: 18px
+      font-family: $bold
+      padding: 10px 20px
+      color: #000 
+      transition: 0.6s
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      &:hover
+        background-color: $main
+        box-shadow: 0 0 5px $light
+        color: #fff
+        transition: 0.6s
+  small
+    font-size: 10px
+    color: #fff
+    text-align: center
+    margin-top: 20px
+    a
+      color: $light
+      font-size: 10px
+  &-close
+    position: absolute
+    right: 8px
+    top: -5px
+    font-size: 30px
+    color: #fff
+    cursor: pointer
+    transition: 0.6s
+    &:hover
+      color: $light
+      transition: 0.6s
+.popup-callback2
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(450%, -50%)
+  z-index: 120
+  max-width: 320px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 20px
+  background-color: $main
+  border-radius: 5px
+  box-shadow: 0 0 5px $main
+  transition: 1s
+  &-active
+    transform: translate(-50%, -50%)
+  div.title
+    font-size: 20px
+    color: #fff
+  select
+    border: none
+    width: 240px
+    border-radius: 30px
+    padding: 10px 10px 12px 20px
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    background-color: #fff
+    &:focus
+      outline: none
+    option
+      border-radius: 10px
+      background-color: #fff
+      background-color: #fff
+      padding: 10px 10px 12px 20px
+  label
+    font-size: 12px
+    color: #fff
+    margin-top: 15px
+  input
+    width: 240px
+    border-radius: 30px
+    font-size: 14px
+    padding: 10px 10px 12px 20px
+    border: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    &[type="submit"]
+      margin-top: 25px
+      background-color: $light
+      font-size: 18px
+      font-family: $bold
+      padding: 10px 20px
+      color: #000 
+      transition: 0.6s
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+      &:hover
+        background-color: $main
+        box-shadow: 0 0 5px $light
+        color: #fff
+        transition: 0.6s
+  small
+    font-size: 10px
+    color: #fff
+    text-align: center
+    margin-top: 20px
+    a
+      color: $light
+      font-size: 10px
+  &-close
+    position: absolute
+    right: 8px
+    top: -5px
+    font-size: 30px
+    color: #fff
+    cursor: pointer
+    transition: 0.6s
+    &:hover
+      color: $light
+      transition: 0.6s
+.toggle
+  position: fixed
+  top: 20px
+  right: 20px
+  transform: translateX(-50%)
+  height: 41px
+  width: 41px
+  cursor: pointer
+  display: none
+  z-index: 999999
+  border: 1px solid $light
+  z-index: 99
+  span
+    transition: all 0.6s
+    position: absolute
+    background-color: $main
+    width: 5px
+    height: 5px
+    top: 6px
+    left: 6px
+    border-radius: 1px
+    &:nth-child(2)
+      left: 17px
+    &:nth-child(3)
+      left: 28px
+    &:nth-child(4)
+      top: 17px
+    &:nth-child(5)
+      top: 17px
+      left: 17px
+    &:nth-child(6)
+      top: 17px
+      left: 28px
+    &:nth-child(7)
+      top: 28px
+      left: 6px
+    &:nth-child(8)
+      top: 28px
+      left: 17px
+    &:nth-child(9)
+      top: 28px
+      left: 28px
+      
+.toggle-active
+  span
+    background-color: $light
+    &:last-child
+      top: 17.5px
+      width: 38px
+      left: 0.5px
+      transform: rotate(-45deg)
+      height: 4px
+    &:first-child
+      top: 17.5px
+      width: 38px
+      left: 0.5px
+      transform: rotate(45deg)
+      height: 4px
+    &:nth-child(2)
+      left: 17px
+      top: 17px
+    &:nth-child(3)
+      left: 17px
+      top: 17px
+    &:nth-child(4)
+      top: 17px
+      left: 17px
+    &:nth-child(5)
+      top: 17px
+      left: 17px
+    &:nth-child(6)
+      top: 17px
+      left: 17px
+    &:nth-child(7)
+      top: 17px
+      left: 17px
+    &:nth-child(8)
+      top: 17px
+      left: 17px
+.button
+  background-color: $light
+  font-family: $bold
+  color: #fff
+  border-radius: 50px
+  border: none
+  padding: 15px 50px
+  font-size: 16px
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: 0.6s
+  cursor: pointer
+  &:hover
+    color: $light
+    background-color: $main
+    transition: 0.6s
+.title
+  font-size: 24px
+  color: $main
+  font-family: $bold
+  width: 100%
+  text-align: center
+.header
+  background-image: url(../img/bg-header1.png)
+  background-position: center center
+  width: 100%
+  background-size: cover
+  background-repeat: no-repeat
+  min-height: 1000px
+  z-index: 1
+  &-bottom
+    z-index: 5
+    padding: 50px 0
+    padding-top: 80px
+    margin-top: -130px
+    min-height: 300px
+    width: 100%
+    background-image: url(../img/bg-header-yellow.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+    &_content
+      display: flex
+      flex-basis: 100%
+      margin-top: 50px
+      div 
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        flex-basis: 50%
+        padding: 10px 0
+        padding-left: 110px
+        border: 1px dashed #fff
+        border-radius: 3px
+        margin-right: 40px
+        
+        b
+          color: $main
+          font-size: 18px
+          font-family: $bold
+          margin-bottom: 5px
+        span
+          color: $main
+          font-size: 16px
+          
+        img
+          position: absolute
+          left: -15px
+          top: 50%
+          transform: translateY(-50%)
+          width: 100px
+  &-content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    margin-top: 250px
+    span
+      max-width: 420px
+      color: #fff
+      font-size: 16px
+      margin: 30px 0
+    h1
+      max-width: 470px
+      font-size: 54px
+      line-height: 58px
+      color: #fff
+  &-nav
+    display: flex
+    margin-top: 30px
+    align-items: flex-start
+    justify-content: center
+    
+    transition: 0.6s
+    
+    ul
+      display: flex
+      align-items: center
+      justify-content: center
+      li.has-children
+        margin: 0 5px 0 15px
+        padding-right: 10px
+        position: relative
+        ul
+          position: absolute
+          top: 25px
+          left: 0
+          width: 100%
+          display: none
+          float: left
+          box-shadow: 0 0 5px rgba($main, 0.5)
+          border-radius: 0 0 5px 5px
+          li
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            margin: 0
+            &:last-child
+              border-radius: 0 0 10px 10px
+            a
+              color: $main
+              display: flex
+              width: 100%
+              justify-content: flex-start
+              align-items: center
+              padding: 8px 10px
+              transition: 0.6s
+              &:hover
+                color: $light
+                transition: 0.6s
+        &::after
+          position: absolute
+          content: ''
+          transform: translateY(-50%)
+          background-image: url(../img/icons/prev.png)
+          background-repeat: no-repeat
+          background-size: cover
+          height: 7px
+          width: 11px
+          right: -5px
+          top: 60%
+      li
+        display: flex
+        margin: 0 15px
+        a
+          color: $main
+          font-family: $bold
+          font-size: 14px
+          transition: 0.6s
+          &:hover
+            color: $light
+            transition: 0.6s
+      ul.sub-menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        li
+        display: flex
+        margin: 0 15px
+        a
+          color: $main
+          font-family: $bold
+          font-size: 14px
+          &:hover
+            color: $light
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 10px
+    &_left
+      display: flex
+      flex-basis: 25%
+    &_center
+      display: flex
+      flex-basis: 50%
+      display: flex
+      align-items: center
+      justify-content: space-around
+      span
+        font-size: 13px
+        color: $main
+        position: relative
+        &:after
+          position: absolute
+          content: ''
+          left: -22px
+          top: 50%
+          transform: translateY(-50%)
+          height: 14px
+          width: 14px
+          background-image: url(../img/icons/clock.png)
+          background-repeat: no-repeat
+          background-size: cover
+      a
+        font-family: $bold
+        font-size: 17px
+        position: relative
+        transition: 0.6s
+        &:hover
+          transition: 0.6s
+          color: $light
+        &:after
+          position: absolute
+          content: ''
+          left: -22px
+          top: 50%
+          transform: translateY(-50%)
+          height: 14px
+          width: 14px
+          background-image: url(../img/icons/callback.png)
+          background-repeat: no-repeat
+          background-size: cover
+    &_right
+      display: flex
+      flex-basis: 25%
+      display: flex
+      justify-content: flex-end
+
+.clients
+  padding: 70px 0
+  div.title
+    margin-bottom: 30px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: flex-start
+    &-item
+      display: flex
+      flex-direction: column
+      flex-basis: 32%
+      margin-top: 40px
+      justify-content: flex-start
+      &_title
+        display: flex
+        align-items: center
+        justify-content: flex-start
+        position: relative
+        padding-left: 60px
+        margin-bottom: 30px
+        font-family: $bold
+        color: $main
+        font-size: 18px
+        img
+          position: absolute
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+      &_text
+        font-size: 16px
+        color: $main
+.ways
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: flex-start
+  padding: 70px 0
+  padding-top: 0px
+  &-wrap
+    display: flex
+    flex-basis: 100%
+    align-items: center
+    justify-content: flex-end
+    position: relative
+    padding: 20px
+    margin-top: 60px
+    min-height: 350px
+    padding-right: 25px
+    img
+      max-height: 290px
+    &:nth-child(4)
+      padding-right: 20px
+      padding-left: 25px
+      img
+        margin-left: 0
+        margin-bottom: -5px
+        max-height: 280px
+      p
+        margin-left: 30px
+        margin-right: 250px
+    img.ways-wrap-img
+      position: absolute
+      width: 100%
+      height: 100%
+      right: 0
+      top: 51%
+      transform: translateY(-50%)
+      min-height: 100%
+    p
+      margin-left: 250px
+      font-size: 16vpx
+      line-height: 28px
+      b
+        color: $light
+    img
+      margin-left: 40px
+      height: 100%
+    
+  span.title
+    font-family: $reg
+    font-size: 16px
+    max-width: 60%
+    margin: 20px 0
+
+.price
+  padding: 70px 0
+  padding-top: 0px
+  display: flex
+  flex-direction: column
+  align-items: center
+  &-toggle
+    display: none
+    &-close
+      display: none
+  &-buttons
+    display: flex
+    margin-top: 70px
+    a
+      width: 300px
+      background-color: #fff
+      border: 2px solid $light
+      margin-right: 20px
+      color: $light
+    div
+      width: 300px
+      margin-left: 20px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+    &-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      padding: 40px 20px
+      border: 1px solid $light
+      border-radius: 20px
+      min-height: 400px
+      min-width: 260px
+      margin-top: 30px
+      transition: 0.6s
+      &:hover
+        background-color: $light
+        transition: 0.6s
+        a
+          background-color: #fff
+      img
+        max-height: 100%
+        width: auto
+      div.title
+        font-size: 18px
+        text-align: start
+        margin-top: 20px
+        line-height: 20px
+      span
+        color: $main
+        font-size: 12px
+        padding: 0
+        margin: 35px 0
+        margin-top: 10px
+        width: 100%
+        display: flex
+        justify-content: flex-start
+      &-button
+        width: 100%
+        display: flex
+        justify-content: flex-start
+        a.button
+          padding: 10px 20px
+          font-size: 14px
+          margin-bottom: 10px
+          margin-left: 0
+  &-show
+    display: flex      
+  span.title
+    font-family: $reg
+    font-size: 14px
+    margin: 20px 0
+    max-width: 700px
+    display: flex
+    margin: 20px auto
+
+
+.post
+  max-width: 1920px
+  margin: auto
+  padding-bottom: 70px
+  display: flex
+  flex-wrap: wrap
+  flex-basis: 100%
+  a.button
+    margin: 70px auto
+    margin-bottom: 0
+  div.title
+    margin-bottom: 70px
+    font-size: 30px
+  &-wrap
+    position: relative
+    display: flex
+    flex-basis: 25%
+    img
+      max-width: 480px
+      max-height: 320px
+      width: 100%
+      height: auto
+      cursor: pointer
+    &-overlay
+      position: absolute
+      padding: 40px 30px
+      display: flex
+      flex-direction: column
+      width: 100%
+      height: 100%
+      justify-content: flex-end
+      align-items: flex-start
+      top: 0
+      left: 0
+      background-color: rgba($main, 0.6)
+      transition: 0.6s
+      opacity: 0
+      h3
+        color: #ffffff
+        font-size: 20px
+      a
+        color: $light
+        font-size: 16px
+        margin-top: 15px
+        &:hover
+          text-decoration: underline
+
+.question
+  display: flex
+  padding:  0
+  padding-top: 20px
+  &-wrap
+    display: flex
+    flex-direction: column
+    flex-basis: 50%
+    align-items: center
+    div.title
+      margin-bottom: 20px
+    img
+      max-height: 80%
+      max-width: 80%
+    &-title
+      font-size: 18px
+      cursor: pointer
+      font-family: $bold
+      color: $main
+      padding: 20px
+      width: 100%
+      position: relative
+      &:before
+        position: absolute
+        right: 10px
+        content: ''
+        height: 9px
+        width: 16px
+        top: 50%
+        transform: translateY(-50%) rotate(0deg)
+        background-image: url(../img/icons/prev.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        transition: 0.6s
+      &:after
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: $main
+        content: ''
+        bottom: 0
+        left: 0
+        transition: 0.6s
+    &-text
+      font-size: 16px
+      padding-left: 30px 
+      padding-right: 60px
+      position: relative
+      padding-top: 20px
+      padding-bottom: 20px
+      display: none
+      &:after
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: $main
+        content: ''
+        bottom: 0
+        left: 0
+
+.question-wrap-title-active
+  &:before
+    position: absolute
+    right: 10px
+    content: ''
+    height: 9px
+    width: 16px
+    top: 50%
+    transform: translateY(-50%) rotate(180deg)
+    background-image: url(../img/icons/prev.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    transition: 0.6s
+  &:after
+    position: absolute
+    width: 0%
+    height: 1px
+    background-color: $main
+    content: ''
+    bottom: 0
+    left: 0
+    transition: 0.6s
+
+.footer
+  background-color: $main
+  padding: 30px 0
+  position: relative
+  &-wrap
+    display: flex
+    flex-basis: 100%
+    justify-content: space-between
+    flex-wrap: wrap
+    &-copy
+      color: #fff
+      opacity: 0.5
+      font-size: 14px
+      display: flex
+      flex-basis: 30%
+      justify-content: center
+    &-tel
+      display: flex
+      flex-basis: 20%
+      justify-content: center
+      a
+        color: #fff
+        position: relative
+        padding-left: 25px
+        &:hover
+          color: $light
+        &:after
+          position: absolute
+          content: ''
+          height: 20px
+          width: 20px
+          left: -5px
+          top: 50%
+          transform: translateY(-50%)
+          background-image: url(../img/icons/footer-phone.png)
+          background-repeat: no-repeat
+          background-size: cover
+    &-mail
+      display: flex
+      flex-basis: 25%
+      justify-content: center
+      a
+        color: #fff
+        font-size: 14px
+        text-decoration: underline
+        position: relative
+        padding-left: 25px
+        &:hover
+          color: $light
+        &:after
+          position: absolute
+          content: ''
+          height: 15px
+          width: 20px
+          left: -5px
+          top: 50%
+          transform: translateY(-50%)
+          background-image: url(../img/icons/footer-mail.png)
+          background-repeat: no-repeat
+          background-size: cover
+    &-clock
+      color: #ffffff
+      display: flex
+      justify-content: center
+      flex-basis: 25%
+      font-size: 14px
+      position: relative
+      &:after
+        position: absolute
+        content: ''
+        height: 20px
+        width: 20px
+        left: 15px
+        top: 50%
+        transform: translateY(-50%)
+        background-image: url(../img/icons/footer-clock.png)
+        background-repeat: no-repeat
+        background-size: cover
+#webfree
+  position: absolute
+  bottom: 0
+  left: 0
+  a
+    font-size: 12px
+    color: rgba(#fff, 0.5)
+
+.portfolio
+  margin-top: -120px
+  div.title
+    font-size: 32px
+  &-wrap
+    padding: 70px 0
+    &-item
+      display: flex
+      align-items: flex-start
+      justify-content: space-between
+      border-radius: 5px
+      box-shadow: 0 0 5px rgba($main, 0.2)
+      margin-bottom: 50px
+      &_right
+        margin: 20px
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        width: 100%
+        margin-left: 40px
+        h4
+          font-size: 22px
+          padding: 0
+        p
+          font-size: 16px
+          padding-left: 30px
+          margin-top: 5px
+        &_leads
+          font-family: $bold
+          font-size: 18px
+          padding-left: 30px
+          margin-top: 15px
+          position: relative
+          &::after
+            position: absolute
+            content: ''
+            height: 17px
+            width: 17px
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            background-repeat: no-repeat
+            background-size: cover
+            background-image: url(../img/icons/arr.png)
+      &_left
+        display: flex
+        flex-direction: column
+        div.button
+          margin: 20px
+          box-shadow: 0 0 15px rgba($main, 0.2)
+        img
+          max-width: 350px
+          min-width: 300px
+          height: auto
+          width: 100%
+          border-radius: 5px 0 0 0
+          box-shadow: 2px 2px 5px rgba($main, 0.2)
+.contacts
+  margin-top: -180px
+  padding-bottom: 70px
+  &-form
+    display: flex
+    flex-basis: 100%
+    box-shadow: 0px 0px 5px rgba($main, 0.2) 
+    padding: 40px
+    max-width: 800px
+    border-radius: 5px
+    margin: auto
+    flex-wrap: wrap
+    small
+      display: flex
+      flex-direction: column
+      align-items: center
+      color: $main
+      font-size: 10px
+      width: 100%
+      margin: auto
+      margin-top: 20px
+      justify-content: center
+      padding: 0 30px
+    div.title-in
+      display: flex
+      flex-basis: 100%
+      justify-content: center
+      font-size: 18px
+      padding: 0
+      margin: 0
+      font-family: $bold
+      color: $main
+      margin-bottom: 40px
+    &_left
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      flex-basis: 50%
+      input
+        width: 300px
+        border-radius: 30px
+        font-size: 14px
+        padding: 15px 10px 15px 20px
+        border: none
+        box-shadow: 0 0 10px rgba($main, 0.2)
+        margin-bottom: 20px
+      label
+        font-size: 14px
+        color: $main
+        margin-bottom: 5px
+    &_right
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      flex-basis: 50%
+      label
+        margin-bottom: 5px
+      textarea 
+        border-radius: 10px
+        width: 300px
+        max-width: 300px
+        min-width: 300px
+        border-radius: 30px
+        font-size: 14px
+        padding: 20px 10px 12px 20px
+        border: none
+        box-shadow: 0 0 10px rgba($main, 0.2)
+        margin-bottom: 20px
+        max-height: 140px
+        resize: none
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        &:focus
+          outline: none
+      input
+        width: 300px
+        border-radius: 30px
+        font-size: 14px
+        padding: 15px 10px 15px 20px
+        border: none
+        box-shadow: 0 0 10px rgba($main, 0.2)
+        margin-bottom: 20px
+        margin-top: 25px
+        background-color: $main
+        color: $light
+        font-size: 18px
+        font-family: $bold
+        transition: 0.6s
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        &:hover
+          cursor: pointer
+          background-color: $light
+          transition: 0.6s
+          color: $main
+      label
+        font-size: 14px
+        color: $main
+  div.title
+    font-size: 30px
+    margin: 50px 0
+  &-wrap
+    display: flex
+    flex-basis: 100%
+    align-items: flex-start
+    justify-content: center
+    box-shadow: 0px 0px 5px rgba($main, 0.2)
+    border-radius: 5px
+    overflow: hidden
+    &_social
+      display: flex
+      margin-top: 10px
+      a
+        display: flex
+        justify-content: center
+        align-items: center
+      img
+        width: 40px
+        margin-right: 20px
+    &_inn
+      padding-left: 40px
+      position: relative
+      &:after
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        height: 20px
+        width: 20px
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url(../img/icons/inn.svg)
+    &_clock
+      padding-left: 40px
+      position: relative
+      &:after
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        height: 20px
+        width: 20px
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url(../img/icons/clock.svg)
+    &_mail
+      padding-left: 40px
+      position: relative
+      &:after
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        height: 20px
+        width: 20px
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url(../img/icons/mail.svg)
+    &_tel
+      padding-left: 40px
+      position: relative
+      &:after
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        height: 20px
+        width: 20px
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url(../img/icons/telephone.svg)
+    &_geo
+      padding-left: 40px
+      position: relative
+      &:after
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        height: 25px
+        width: 25px
+        background-size: cover
+        background-repeat: no-repeat
+        background-image: url(../img/icons/geo.svg)
+    &_left
+      display: flex
+      flex-basis: 50%
+      flex-direction: column
+      align-items: flex-start
+      justify-content: flex-start
+      padding: 20px
+      
+      span
+        font-size: 16px
+        font-family: $bold
+        margin: 10px 0
+        color: $main
+      a
+        font-size: 16px
+        font-family: $bold
+        margin: 10px 0
+        color: $main
+        &:hover
+          color: $light
+          cursor: pointer
+      
+    &_right
+      display: flex
+      flex-basis: 50%    
+      iframe
+        display: flex
+        width: 100%
+        
+.page-price
+  margin-top: -120px
+  padding-bottom: 70px
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 70px
+    &-item
+      display: flex
+      flex-direction: column
+      flex-basis: 23%
+      align-items: flex-start
+      justify-content: space-between
+      border-radius: 5px
+      box-shadow: 0 0 5px rgba($main, 0.3)
+      padding: 20px
+      margin-bottom: 30px
+      div.title
+        font-size: 18px
+        text-align: left
+        margin: 20px 0
+      span.title
+        font-family: $reg
+        font-size: 14px
+        text-align: left
+      div.button
+        margin-top: 20px
+        box-shadow: 0 0 5px rgba($main, 0.3)
+        
+      img
+        max-width: 40px
+.process
+  padding: 50px 0
+  background-image: url(../img/process_bg2.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  div.title
+    color: #fff
+    padding-bottom: 50px
+.about
+  &-slider
+    position: relative
+    &-buttons
+      color: #fff
+      display: flex
+      justify-content: center
+      margin-top: 50px
+      padding-bottom: 60px
+      overflow: hidden
+      div.slider-buttons
+        margin: 0 20px
+        display: flex
+        height: 40px
+        width: 200px
+        border: 1px solid rgba($light, 0.4)
+        cursor: pointer
+        font-size: 14px
+        justify-content: center
+        align-items: center
+        position: relative
+        z-index: 9
+        &:after
+          position: absolute
+          content: ''
+          bottom: -50px
+          left: -20px
+          height: 1px
+          width: 130%
+          background-color: #fff
+        &:before
+          position: absolute
+          bottom: -57px
+          height: 15px
+          width: 15px
+          background-color: #fff
+          content: ''
+          border-radius: 50%
+          z-index: 11
+    div.about-active
+      color: $light 
+      &::after
+        background-color: $light 
+      &::before
+        background-color: $light
+    &-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      width: 100%
+      min-width: 100%
+      flex-basis: 100%
+      transition: 0.7s
+      &-text
+        font-size: 16px
+        color: #fff
+        display: flex
+        padding-top: 50px
+      div.title
+        opacity: 0.4
+        font-family: $reg
+      button.button
+        color: #000
+        margin-top: 50px
+        width: 250px
+        &:hover
+          color: #fff
+
+.wrap-about
+  display: flex
+  overflow: hidden
+  width: 100%
+  transition: 0.7s
+.item-active
+  transform: translateX(-100%)  
+  transition: 0.7s
+.item-active2
+  transform: translateX(-200%)  
+.item-active3
+  transform: translateX(-300%)  
+.item-active4
+  transform: translateX(-400%)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"
