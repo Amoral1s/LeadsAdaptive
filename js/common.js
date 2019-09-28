@@ -76,17 +76,17 @@ $(function () {
     $('.popup-callback2').removeClass('popup-callback2-active');
     $('.overlay').removeClass('overlay-active');
   });
-  /*  
-  $('.about-slider').slick({
+   
+  $('.feedback-wrap').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
       arrows: true,
-      dots: true,
-      autoplay: true,
+      dots: false,
+      autoplay: false,
       autoplayspeed: 3000,
       speed: 500
-    }); */
+    });
     $('.toggle-about').on('click', function () { 
       $('.item_1').addClass('item-active');
       $('.item_2').addClass('item-active');
